@@ -87,8 +87,10 @@ Programi, ki uporabljajo daljinec in piskač hkrati, morajo pred `#include <IRre
 | [Kockice](Kockice/) | padajoče kocke, polne vrstice izginejo; ob koncu pokaže število vrstic | matrika, IR, piskač |
 | [Formula](Formula/) | voziš formulo po vijugasti cesti mimo ovir | matrika, IR |
 | [Odbijanje](Odbijanje/) | z loparjem odbijaš žogico, sproti se pojavljajo ovire; ob koncu pokaže točke | matrika, IR, piskač |
+| [Dez](Dez/) | lovljenje dežja: s košaro loviš padajoče kapljice; ob koncu pokaže ujete | matrika, IR, piskač |
+| [Igre](Igre/) | več iger v enem programu; izbereš s tipko 3 (Kockice 2: ▼ takoj na dno, ▶|| pavza, bonus za več vrstic, rekord v EEPROM), 4 (Ognjemet: rakete in eksplozije z zvokom, VOL+ dodatna raketa), 5 (Strelec: s topom streljaš kamne, VOL+ strel), 6 (Dež), 7 (Kockice), 8 (Formula), 9 (Kača) | matrika, IR, piskač |
 
-Tipke na daljincu: VOL+ gor, VOL− dol, |◀◀ levo, ▶▶| desno (ali številke 2, 8, 4, 6). V Kockicah VOL+ zavrti kos, VOL− ga spusti hitreje; v Formuli VOL+/VOL− menjata prestavo. Tipka ▶|| v igrah ne naredi nič.
+Tipke na daljincu: VOL+ gor, VOL− dol, |◀◀ levo, ▶▶| desno (v posameznih programih tudi številke 2, 8, 4, 6; v programu Igre številke izbirajo igro). V Kockicah VOL+ zavrti kos, VOL− ga spusti hitreje; v Formuli VOL+/VOL− menjata prestavo. Tipka ▶|| v igrah ne naredi nič.
 
 ## Nalaganje programov
 
