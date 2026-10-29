@@ -59,7 +59,8 @@ flowchart LR
   subgraph PIS["Pasivni piskač"]
     B_P["+"]
     B_M["−"]
-  end  V5 --- PLUS
+  end
+  V5 --- PLUS
   GND --- MINUS
   PLUS --- M_VCC
   MINUS --- M_GND
@@ -70,7 +71,8 @@ flowchart LR
   MINUS --- I_G
   P2 --- I_Y
   P8 --- B_P
-  MINUS --- B_M```
+  MINUS --- B_M
+```
 
 Programi, ki uporabljajo daljinec in piskač hkrati, morajo pred `#include <IRremote.hpp>` imeti `#define IR_USE_AVR_TIMER5`, ker `tone()` in knjižnica za daljinec sicer uporabljata isti časovnik.
 
