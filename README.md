@@ -27,7 +27,6 @@ Napajanje gre iz Mege na tračnici testne plošče (5V na rdečo **+**, GND na m
 | | Y (signal) | pin 2 |
 | Pasivni piskač | + (daljša nožica) | pin 8 |
 | | − | GND (modra tračnica −) |
-
 ```mermaid
 flowchart LR
   subgraph MEGA["Arduino Mega 2560"]
@@ -58,8 +57,7 @@ flowchart LR
   subgraph PIS["Pasivni piskač"]
     B_P["+"]
     B_M["−"]
-  end
-  V5 --- PLUS
+  end  V5 --- PLUS
   GND --- MINUS
   PLUS --- M_VCC
   MINUS --- M_GND
@@ -70,8 +68,7 @@ flowchart LR
   MINUS --- I_G
   P2 --- I_Y
   P8 --- B_P
-  MINUS --- B_M
-```
+  MINUS --- B_M```
 
 Programi, ki uporabljajo daljinec in piskač hkrati, morajo pred `#include <IRremote.hpp>` imeti `#define IR_USE_AVR_TIMER5`, ker `tone()` in knjižnica za daljinec sicer uporabljata isti časovnik.
 
@@ -85,6 +82,7 @@ Programi, ki uporabljajo daljinec in piskač hkrati, morajo pred `#include <IRre
 | [KacaDaljinec](KacaDaljinec/) | kača na tipke, pobiraš pikice in rasteš | matrika, IR |
 | [Kockice](Kockice/) | padajoče kocke, polne vrstice izginejo; ob koncu pokaže število vrstic | matrika, IR, piskač |
 | [Formula](Formula/) | voziš formulo po vijugasti cesti mimo ovir | matrika, IR |
+| [Odbijanje](Odbijanje/) | z loparjem odbijaš žogico, sproti se pojavljajo ovire; ob koncu pokaže točke | matrika, IR, piskač |
 
 Tipke na daljincu: VOL+ gor, VOL− dol, |◀◀ levo, ▶▶| desno (ali številke 2, 8, 4, 6). V Kockicah VOL+ zavrti kos, VOL− ga spusti hitreje; v Formuli VOL+/VOL− menjata prestavo. Tipka ▶|| v igrah ne naredi nič.
 
