@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 680 680" font-family="Helvetica, Arial, sans-serif">
+  <title>Vezava: Arduino Mega, matrika MAX7219, IR sprejemnik in piskač z uporom</title>
+  <rect x="0" y="0" width="680" height="680" fill="#FFFFFF"/>
+
+  <text x="340" y="50" text-anchor="middle" font-size="20" font-weight="bold" fill="#2C2C2A">Vezava: Mega, matrika, IR sprejemnik, piskač</text>
+  <text x="340" y="74" text-anchor="middle" font-size="12" fill="#5F5E5A">Pika = spoj na tračnici testne plošče, križanje brez pike = ni stika</text>
+
+  <g transform="translate(0, 95)">
+    <!-- Arduino Mega -->
+    <rect x="40" y="40" width="150" height="425" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+    <text x="115" y="64" text-anchor="middle" font-size="15" font-weight="bold" fill="#0C447C">Arduino Mega</text>
+    <g font-size="12" fill="#185FA5" text-anchor="end" dominant-baseline="central">
+      <text x="180" y="80">5V</text>
+      <text x="180" y="120">GND</text>
+      <text x="180" y="200">pin 7</text>
+      <text x="180" y="240">pin 5</text>
+      <text x="180" y="280">pin 6</text>
+      <text x="180" y="350">pin 2</text>
+      <text x="180" y="420">pin 8</text>
+    </g>
+
+    <!-- Matrika -->
+    <rect x="440" y="50" width="200" height="250" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+    <text x="585" y="165" text-anchor="middle" font-size="15" font-weight="bold" fill="#444441">MAX7219</text>
+    <text x="585" y="185" text-anchor="middle" font-size="12" fill="#5F5E5A">matrika 8×8</text>
+    <g font-size="12" fill="#5F5E5A" dominant-baseline="central">
+      <text x="450" y="80">VCC</text>
+      <text x="450" y="120">GND</text>
+      <text x="450" y="200">DIN</text>
+      <text x="450" y="240">CS</text>
+      <text x="450" y="280">CLK</text>
+    </g>
+
+    <!-- IR sprejemnik -->
+    <rect x="440" y="305" width="200" height="90" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+    <text x="580" y="354" text-anchor="middle" font-size="15" font-weight="bold" fill="#3C3489">IR sprejemnik</text>
+    <g font-size="12" fill="#534AB7" dominant-baseline="central">
+      <text x="450" y="318">R</text>
+      <text x="450" y="350">Y</text>
+      <text x="450" y="380">G</text>
+    </g>
+
+    <!-- Piskač -->
+    <rect x="440" y="405" width="200" height="60" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+    <text x="580" y="439" text-anchor="middle" font-size="15" font-weight="bold" fill="#712B13">Pasivni piskač</text>
+    <g font-size="12" fill="#993C1D" dominant-baseline="central">
+      <text x="450" y="420">+</text>
+      <text x="450" y="450">−</text>
+    </g>
+
+    <!-- Tračnici testne plošče -->
+    <text x="250" y="60" text-anchor="middle" font-size="14" font-weight="bold" fill="#E24B4A">+</text>
+    <text x="280" y="60" text-anchor="middle" font-size="14" font-weight="bold" fill="#378ADD">−</text>
+    <line x1="250" y1="80" x2="250" y2="318" stroke="#E24B4A" stroke-width="4" opacity="0.35"/>
+    <line x1="280" y1="120" x2="280" y2="450" stroke="#378ADD" stroke-width="4" opacity="0.35"/>
+
+    <!-- Žice -->
+    <line x1="190" y1="80" x2="440" y2="80" stroke="#E24B4A" stroke-width="2"/>
+    <line x1="190" y1="120" x2="440" y2="120" stroke="#888780" stroke-width="2"/>
+    <line x1="190" y1="200" x2="440" y2="200" stroke="#EF9F27" stroke-width="2"/>
+    <line x1="190" y1="240" x2="440" y2="240" stroke="#1D9E75" stroke-width="2"/>
+    <line x1="190" y1="280" x2="440" y2="280" stroke="#185FA5" stroke-width="2"/>
+    <line x1="250" y1="318" x2="440" y2="318" stroke="#E24B4A" stroke-width="2"/>
+    <line x1="190" y1="350" x2="440" y2="350" stroke="#7F77DD" stroke-width="2.5"/>
+    <line x1="280" y1="380" x2="440" y2="380" stroke="#888780" stroke-width="2"/>
+    <line x1="190" y1="420" x2="320" y2="420" stroke="#D85A30" stroke-width="2.5"/>
+    <line x1="380" y1="420" x2="440" y2="420" stroke="#D85A30" stroke-width="2.5"/>
+    <line x1="280" y1="450" x2="440" y2="450" stroke="#888780" stroke-width="2"/>
+
+    <!-- Upor 220 Ω: rdeča, rdeča, črna, črna, rjava -->
+    <rect x="320" y="411" width="60" height="18" rx="3" fill="#F5E6C8" stroke="#BA7517" stroke-width="1.5"/>
+    <line x1="332" y1="411" x2="332" y2="429" stroke="#E24B4A" stroke-width="2.5"/>
+    <line x1="342" y1="411" x2="342" y2="429" stroke="#E24B4A" stroke-width="2.5"/>
+    <line x1="352" y1="411" x2="352" y2="429" stroke="#2C2C2A" stroke-width="2.5"/>
+    <line x1="362" y1="411" x2="362" y2="429" stroke="#2C2C2A" stroke-width="2.5"/>
+    <line x1="372" y1="411" x2="372" y2="429" stroke="#854F0B" stroke-width="2.5"/>
+    <text x="350" y="401" text-anchor="middle" font-size="12" fill="#5F5E5A">upor 220 Ω</text>
+
+    <!-- Spoji na tračnicah -->
+    <circle cx="250" cy="80" r="4" fill="#E24B4A"/>
+    <circle cx="250" cy="318" r="4" fill="#E24B4A"/>
+    <circle cx="280" cy="120" r="4" fill="#888780"/>
+    <circle cx="280" cy="380" r="4" fill="#888780"/>
+    <circle cx="280" cy="450" r="4" fill="#888780"/>
+  </g>
+</svg>

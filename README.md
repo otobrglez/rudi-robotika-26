@@ -13,6 +13,8 @@ Ta repozitorij vsebuje kodo za eksperimente iz področja robotike in elektronike
 
 ## Vezava
 
+<img src="docs/vezava.svg" width="1000" height="1000" alt="Shema vezave: Arduino Mega, matrika MAX7219, IR sprejemnik in piskač z uporom 220 Ω">
+
 Napajanje gre iz Mege na tračnici testne plošče (5V na rdečo **+**, GND na modro **−**), od tam pa na vse module.
 
 | Modul | Nožica modula | Kam na Megi |
@@ -25,7 +27,7 @@ Napajanje gre iz Mege na tračnici testne plošče (5V na rdečo **+**, GND na m
 | IR sprejemnik | G | GND (modra tračnica −) |
 | | R | 5V (rdeča tračnica +) |
 | | Y (signal) | pin 2 |
-| Pasivni piskač | + (daljša nožica) | pin 8 |
+| Pasivni piskač | + (daljša nožica) | pin 8, prek upora 220 Ω (tišji zvok; brez upora je glasneje) |
 | | − | GND (modra tračnica −) |
 ```mermaid
 flowchart LR
